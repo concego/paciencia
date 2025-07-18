@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo de Paciência acessível da Euconcegojogar">
+    <title>Jogo de Paciência - Euconcegojogar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Paciência Acessível</h1>
+    </header>
+    <main>
+        <section id="game-area" role="region" aria-label="Área do jogo de Paciência">
+            <div id="stock-waste" class="card-area">
+                <div id="stock" role="button" tabindex="0" aria-label="Estoque: clique para virar uma carta"></div>
+                <div id="waste" aria-label="Descarte"></div>
+            </div>
+            <div id="foundations" class="card-area">
+                <div id="foundation-1" role="region" tabindex="0" aria-label="Fundação de Copas"></div>
+                <div id="foundation-2" role="region" tabindex="0" aria-label="Fundação de Ouros"></div>
+                <div id="foundation-3" role="region" tabindex="0" aria-label="Fundação de Espadas"></div>
+                <div id="foundation-4" role="region" tabindex="0" aria-label="Fundação de Paus"></div>
+            </div>
+            <div id="tableau" class="card-area">
+                <div id="tableau-1" role="region" tabindex="0" aria-label="Pilha 1 do tableau"></div>
+                <div id="tableau-2" role="region" tabindex="0" aria-label="Pilha 2 do tableau"></div>
+                <div id="tableau-3" role="region" tabindex="0" aria-label="Pilha 3 do tableau"></div>
+                <div id="tableau-4" role="region" tabindex="0" aria-label="Pilha 4 do tableau"></div>
+                <div id="tableau-5" role="region" tabindex="0" aria-label="Pilha 5 do tableau"></div>
+                <div id="tableau-6" role="region" tabindex="0" aria-label="Pilha 6 do tableau"></div>
+                <div id="tableau-7" role="region" tabindex="0" aria-label="Pilha 7 do tableau"></div>
+            </div>
+            <div id="game-controls">
+                <button id="restart-button" aria-label="Reiniciar jogo">Reiniciar</button>
+                <button id="back-button" aria-label="Voltar à página inicial">Voltar</button>
+            </div>
+            <div id="game-status" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+    <script src="sounds.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
