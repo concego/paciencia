@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo de Paciência acessível desenvolvido pela equipe Euconcegojogar">
+    <title>Paciência Acessível - Euconcegojogar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Bem-vindo ao Paciência Acessível da Euconcegojogar!</h1>
+    </header>
+    <main>
+        <section aria-labelledby="rules-heading">
+            <h2 id="rules-heading">Regras do Jogo</h2>
+            <p>O Paciência (Klondike) é um jogo de cartas clássico com as seguintes regras:</p>
+            <ul>
+                <li><strong>Objetivo:</strong> Mover todas as cartas para as 4 fundações, organizadas por naipe (Copas, Ouros, Espadas, Paus) em ordem crescente (Ás a Rei).</li>
+                <li><strong>Tableau:</strong> 7 pilhas onde as cartas são organizadas em ordem decrescente, alternando cores (ex.: 7 vermelho sobre 8 preto).</li>
+                <li><strong>Estoque:</strong> Clique para virar cartas para o descarte. Cartas do descarte podem ser usadas no tableau ou nas fundações.</li>
+                <li><strong>Movimento:</strong> Arraste, clique ou use o teclado para mover cartas ou grupos de cartas entre pilhas.</li>
+                <li><strong>Controles:</strong> Navegue com Tab, selecione com Enter, use setas para escolher destinos. Pressione 'R' para reiniciar.</li>
+            </ul>
+        </section>
+        <section aria-labelledby="credits-heading">
+            <h2 id="credits-heading">Créditos</h2>
+            <p>Desenvolvido pela equipe <strong>Euconcegojogar</strong>.</p>
+            <p>Siga-nos nas redes sociais:</p>
+            <ul>
+                <li><a href="https://youtube.com/euconcegojogar" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://facebook.com/euconcegojogar" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://instagram.com/euconcegojogar" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </section>
+        <button id="play-button" onclick="startGame()">Jogar</button>
+    </main>
+    <script>
+        function startGame() {
+            // Redireciona para a página do jogo e inicializa sons
+            window.location.href = 'game.html';
+        }
+    </script>
+</body>
+</html>
